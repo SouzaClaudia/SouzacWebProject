@@ -1,0 +1,60 @@
+/** Author: Claudia Souza */
+.carouseImage {
+    height: 300px;
+    width: 50%;
+
+}
+.card {
+    width: 18rem;
+}
+.card-deck {
+    width: 60rem;
+}
+.cardImage {
+    height: 250px;
+    width: 289px;
+    position:center;
+}
+.bton1 {
+    background-color:darkblue;
+}
+.bton2 {
+    background-color:brown;
+}
+/** --------------About page--------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Crimson+Pro:ital,wght@0,300;0,400;1,200&family=Roboto&display=swap');
+#aboutpage {
+    font-family: 'Crimson Pro', serif;
+}
+/** --------------------------- Rock Paper Scissor Experience page----------------- */
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto&display=swap");
+#rpsgame {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+#rpsgame h2 {
+    font-size: 30px;
+}
+#rpsgame h3 {
+    font-size: 24px;
+}
+#rpsgame h2, h3 {
+    line-height: 1.2em;
+    font-family: 'Aclonica', sans-serif;
+}
+.text-heading {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.sample-text-area {
+    background: #fff;
+    padding: 100px 0 70px 0;
+}
+/**------------------ Contact page------------------------------ */
+#contactpage {
+   font-family: 'Crimson Pro', serif; 
+}
+
+

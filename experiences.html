@@ -1,0 +1,144 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!--Author: Claudia Souza-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <!-- Edited CSS-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto&display=swap">
+    <!--- JavaScript-->
+    <script src="js/Souza_rps.js"></script>
+   
+    <!--- Page TITLE -->
+    <title>Claudia Souza</title>
+</head>
+<body>
+    <!------------------------------ Navigation Bar---------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">Hey I'm Claudia!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="experiences.html">Experiences <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 carouseImage" src="images/rio.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100 carouseImage" src="images/flag.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carouseImage" src="images/beauty.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br />
+        <!---------------------------Card Group / Experiences Box------------------------>
+        <!--------------------------- Rock Paper Scissors game info---------------------->
+        <div class="container" id="rpsgame">
+            <h3>Let's Play! </h3>
+            <h2 class="text-heading"> But first, let's take a look in some info. </h2>
+            <p class="sample-text">
+                This game is played by children and adults and is popular all over the world.
+                Apart from being a game played to pass time, the game is usually played in situations where something has to be chosen.
+                It is similar in that way to other games like flipping the coin, throwing dice or drawing straws.
+                There is no room for cheating or for knowing what the computer is going to do so the results are usually very satisfying with no room for fighting or error.
+                Although the game has a lot of complexity to it, the rules to play it are pretty simple.
+                The game is played where players (you and the computer) deliver hand signals (in this case will be clicking in the element's name) that will represent the elements of the game; rock, paper and scissors.
+                <br>
+                <br>The outcome of the game is determined by 3 simple rules:<br>
+                ♦ Rock wins against scissors.<br>
+                ♦ Scissors win against paper.<br>
+                ♦ Paper wins against rock.<br>
+            </p>
+            <p class="text-right">
+                <sub>Resource: <a href="https://www.wrpsa.com/the-official-rules-of-rock-paper-scissors/">The World Rock Paper Scissor Association.</a>
+                </sub>
+            </p>
+            <br />
+            <!------------------ Rock Paper Scissors game ---------------------------------------->
+            <h3>Let's Play!</h3>
+            <h2 class="text-heading">Pick your Element</h2>
+            <br />
+               <div class="row">
+                <!-----------------------------Buttons user input ---------------------------------------->
+                <div class="col">
+                    <input class="btn btn-success" type="button" onclick="pick('Rock')" value="Rock">
+                    <input class="btn btn-primary bton1" type="button" onclick="pick('Paper')" value="Paper">
+                    <input class="btn btn-danger bton2" type="button" onclick="pick('Scissor')" value="Scissor">
+                    <br />
+                    <br />
+                    <div class="row">
+                        <!------------------------- Game result display -------------------->
+                        <div class="col" id="go">
+                            <p id="result"></p>
+                            <p id="computerChoice"></p>
+                            <p id="winnerMessage"></p>
+                        </div>
+                    </div>
+                 </div>
+                <!---------------------- Rock Paper Scissors Picture----------------------------->
+                <div class="col">
+                    <img class="cardImage" src="images/rps.png" alt="RPS">
+                </div>
+                </div>
+            </div>
+        <br />
+        <br />
+        <br />
+        </div>
+        <!------------------------------------ Footer ---------------------------------------->
+        <footer class="page-footer font-small blue pt-4">
+            <!--------------------------- Copyright -- JavaScript --------------------->
+            <div class="footer-copyright text-center py-3">
+                <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                <a href="https://instagram.com"><i id="social-in" class="fa fa-instagram fa-2x social"></i></a>
+                <p>
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear())</script> Claudia Souza
+                </p>
+                <a href="#"> ClaudiaSouza.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    <!-- Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
